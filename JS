@@ -1,0 +1,12 @@
+// Select the link
+const link = document.querySelector('a');
+
+// Create a button
+const button = document.createElement('button');
+button.textContent = link.textContent; // Copy the link text
+button.onclick = () => {
+    window.location.href = link.href; // Navigate to the link's URL
+};
+
+// Replace the link with the button
+link.parentNode.replaceChild(button, link);
