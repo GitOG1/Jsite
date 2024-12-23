@@ -1,4 +1,4 @@
-// Select the link
+// https://www.youtube.com/watch?v=H8ZH_mkfPUY
 const link = document.querySelector('a');
 
 // Create a button
