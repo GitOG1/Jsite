@@ -1,12 +1,16 @@
-// https://www.youtube.com/watch?v=H8ZH_mkfPUY
-const link = document.querySelector('a');
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
 
-// Create a button
-const button = document.createElement('button');
-button.textContent = link.textContent; // Copy the link text
-button.onclick = () => {
-    window.location.href = link.href; // Navigate to the link's URL
-};
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+}
 
-// Replace the link with the button
-link.parentNode.replaceChild(button, link);
+function calculateResult() {
+    const display = document.getElementById('display');
+    try {
+        display.value = eval(display.value);
+    } catch {
+        display.value = 'Error';
+    }
+}
