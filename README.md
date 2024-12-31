@@ -1,3 +1,3 @@
 # My Project
 
-Check out the live demo [here](https://username.github.io/repository-name).
+Check out the live demo [here]( https://gitog1.github.io/Jsite/).
